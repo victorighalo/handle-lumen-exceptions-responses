@@ -1,6 +1,7 @@
 
 ### Lumen exceptions render function to catch, log and return appropriate error messages
 
+#### NB: Log is a model for logging the errors in your Database
 ```php
 public function render($request, Exception $e)
 {
