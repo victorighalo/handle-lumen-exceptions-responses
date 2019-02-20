@@ -2,9 +2,8 @@
 ### Lumen exceptions render function to catch, log and return appropriate error messages
 
 
- ## public function render($request, Exception $e)
- ## {
-
+public function render($request, Exception $e)
+{
         $response = [
             'success' => false,
             'status' => 400,
@@ -97,4 +96,4 @@
         }
 
             return response()->json($response, $response['status']);
-   ## }
+  }
