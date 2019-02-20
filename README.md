@@ -1,7 +1,7 @@
 
 ### Lumen exceptions render function to catch, log and return appropriate error messages
 
-
+```php
 public function render($request, Exception $e)
 {
         $response = [
@@ -97,3 +97,4 @@ public function render($request, Exception $e)
 
             return response()->json($response, $response['status']);
   }
+```
