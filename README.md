@@ -1,11 +1,9 @@
-# handle-lumen-exceptions-responses
-Lumen exceptions render function to catch, log and return appropriate error messages
+
+### Lumen exceptions render function to catch, log and return appropriate error messages
 
 
- public function render($request, Exception $e)
-    {
-
-//        return parent::render($request, $e);
+ ## public function render($request, Exception $e)
+ ## {
 
         $response = [
             'success' => false,
@@ -99,4 +97,4 @@ Lumen exceptions render function to catch, log and return appropriate error mess
         }
 
             return response()->json($response, $response['status']);
-    }
+   ## }
